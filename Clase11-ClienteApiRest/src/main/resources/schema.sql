@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS client(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(75) NOT NULL,
+    lastname VARCHAR(75) NOT NULL,
+    birthday DATE NOT NULL
+);
+

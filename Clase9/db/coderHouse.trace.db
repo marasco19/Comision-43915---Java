@@ -1,0 +1,9 @@
+2023-05-09 20:29:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "alumno" no encontrada
+Table "alumno" not found; SQL statement:
+select * from alumno [42102-214]
+2023-05-16 08:41:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from invoice_details\000d\000a[*]select * from client"
+Syntax error in SQL statement "select * from invoice_details\000d\000a[*]select * from client"; SQL statement:
+select * from invoice_details
+select * from client [42000-214]
