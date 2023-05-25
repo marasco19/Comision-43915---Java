@@ -1,0 +1,4 @@
+2023-05-09 20:29:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "alumno" no encontrada
+Table "alumno" not found; SQL statement:
+select * from alumno [42102-214]
