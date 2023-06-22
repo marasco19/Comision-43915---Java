@@ -8,6 +8,7 @@ public class Product {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;
+    private String title;
     private String description;
     private String code;
     private double price;
@@ -20,6 +21,14 @@ public class Product {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -58,6 +67,7 @@ public class Product {
     public String toString() {
         return "Producto{" +
                 "id=" + id +
+                "title=" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", code='" + code + '\'' +
                 ", price=" + price +

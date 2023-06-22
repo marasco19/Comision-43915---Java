@@ -1,25 +1,11 @@
 package com.coderhouse.Clase8JPAABM.model;
 
-import jakarta.persistence.*;
+public class ClientDTO {
 
-@Entity
-@Table(name = "client")
-public class Client {
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private int id;
     private String name;
     private String lastname;
     private int docnumber;
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -47,8 +33,7 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client{" +
-                "id=" + id +
+        return "ClientDTO{" +
                 ", name='" + name + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", docnumber=" + docnumber +
